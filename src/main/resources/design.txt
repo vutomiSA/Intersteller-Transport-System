@@ -1,0 +1,43 @@
+Startup services
+-----------------
+DataServiceImpl.JAVA
+-Waits for the Spring Boot context to start than reads the XLS data file
+-Persists the data file records into the in memory derby DB
+
+ORM
+-------
+-Tried not to have an unnecessarily deep object graph, could have had a Graph object that contains 
+a set of Planets and a set of Routes but instead went with the below more performance friendly approach.
+-Mapped a Unidirectional Route --->Planet
+-Planet.java
+-Route.java
+-Result.java
+
+Business Logic
+-----------------
+DijkstraAlgorithmImpl.java
+-Contains the DijkstraAlgorithm business logic
+-Uses the strategy pattern to delegate finding the shortest path to SimpleDirectedWeightedGraph
+-Lazily initializes the SimpleDirectedWeightedGraph at service invocation time
+
+
+Rest Layer
+-------------
+InterstellarRestController.java
+-Reuses DijkstraAlgorithmImpl.java to return the shortest path 
+-Sample usage-->http://localhost:8100/
+-Test usage-->http://localhost:8100/shortestpath/A,Z
+
+HATEOAS endpoints that expose the DB objects
+-Sample usage-->http://localhost:8100/planets
+-Sample usage-->http://localhost:8100/routes
+
+
+SOAP layer
+-------------
+-Will use apache CFX
+
+Front end
+---------
+-Will use Thymeleaf, Bootstrap and jQuery
+
