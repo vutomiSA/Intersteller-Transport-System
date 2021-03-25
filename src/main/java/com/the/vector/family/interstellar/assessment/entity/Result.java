@@ -13,7 +13,7 @@ import javax.persistence.OneToOne;
 
 /**
  *
- * @author Vee
+ * @author Vutomi Ngobeni
  */
 @Entity
 public class Result implements Serializable{

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  *
- * @author Vee
+ * @author Vutomi Ngobeni
  */
 @Repository
 public interface ResultRepository extends JpaRepository<Result, String>{

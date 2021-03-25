@@ -7,7 +7,7 @@ package com.the.vector.family.interstellar.assessment.service;
 
 /**
  *
- * @author Vee
+ * @author Vutomi Ngobeni
  */
 public interface DataService {
     public void getDataFromFile();

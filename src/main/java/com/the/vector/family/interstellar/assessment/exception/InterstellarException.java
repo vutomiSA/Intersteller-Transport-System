@@ -7,7 +7,7 @@ package com.the.vector.family.interstellar.assessment.exception;
 
 /**
  *
- * @author Vee
+ * @author Vutomi Ngobeni
  */
 public class InterstellarException extends Exception {
 

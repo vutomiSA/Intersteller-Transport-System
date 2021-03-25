@@ -11,7 +11,7 @@ import javax.persistence.Id;
 
 /**
  *
- * @author Vee
+ * @author Vutomi Ngobeni
  */
 @Entity
 public class Planet implements Serializable{

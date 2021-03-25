@@ -7,7 +7,7 @@ package com.the.vector.family.interstellar.assessment.dijkstra;
 
 /**
  *
- * @author Vee
+ * @author Vutomi Ngobeni
  */
 public interface DijkstraAlgorithm {
     public String findShortestPath(String source, String destination);

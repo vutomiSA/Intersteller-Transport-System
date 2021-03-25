@@ -8,7 +8,6 @@ package com.the.vector.family.interstellar.assessment.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
 import com.the.vector.family.interstellar.assessment.dijkstra.DijkstraAlgorithm;
 import com.the.vector.family.interstellar.assessment.entity.Planet;
 import com.the.vector.family.interstellar.assessment.entity.Result;
@@ -19,11 +18,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  *
- * @author Vee
+ * @author Vutomi Ngobeni
  * Restful service to compute the shortest path
  */
 @Controller
